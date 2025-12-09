@@ -1,0 +1,214 @@
+.product-making {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+.making-contianer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.making-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 50px;
+}
+
+.making-row {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+    position: relative;
+}
+
+.making-video {
+    width: 269px;
+    height: 162px;
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden !important;
+}
+
+.making-video img {
+    width: 100%;
+}
+
+.making-info {
+    display: flex;
+}
+
+.progress-bar {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -25%;
+    top: 0px;
+}
+
+.progress-bar .dotts {
+    font-size: var(--font-size-40);
+    width: 290px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 186px;
+    left: -110px;
+    color: var(--color-grey);
+    letter-spacing: 5px;
+}
+
+.progress1 {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-24);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: var(--box-shadow);
+    z-index: 9;
+    color: var(--color-black1);
+}
+
+.progress {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: conic-gradient(var(--color-green) 0deg 90deg,
+            var(--background-1) 90deg 360deg);
+    z-index: 9;
+}
+
+.progress2p::before {
+    background: conic-gradient(var(--color-green) 0deg 135deg,
+            var(--background-1) 135deg 360deg);
+
+}
+
+.progress3p::before {
+    background: conic-gradient(var(--color-green) 0deg 225deg,
+            var(--background-1) 225deg 360deg);
+
+}
+
+.progress4p::before {
+    background: conic-gradient(var(--color-green) 0deg 270deg,
+            var(--background-1) 270deg 360deg);
+
+}
+
+.progress5p::before {
+    background: conic-gradient(var(--color-green) 0deg 360deg,
+            var(--background-1) 270deg 360deg);
+
+}
+
+.making-summry {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.making-summry span {
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-20);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    color: var(--color-black1);
+}
+
+.making-summry p {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height22);
+    color: var(--color-grey);
+}
+
+
+@media screen and (min-width:768px) {
+    .making-contianer {
+        align-items: center;
+        row-gap: 30px;
+
+
+        padding-bottom: 60px;
+        border-bottom: 2px solid var(--color-grey);
+        border-radius: 5px;
+    }
+
+    .heading-s {
+        width: 90%;
+    }
+
+    .making-parent {
+        margin-top: 20px;
+    }
+
+    .making-row {
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .making-row:nth-child(odd) {
+        flex-direction: row;
+        text-align: end;
+    }
+
+    .making-summry {
+        width: 40%;
+        row-gap: 10px;
+    }
+
+    .making-video {
+        width: 450px;
+        height: 240px;
+        opacity: 1;
+    }
+
+    .progress-bar {
+        left: 0;
+        right: 0;
+        top: 83px;
+        margin: auto;
+    }
+
+    .progress1 {
+        width: 70px;
+        height: 70px;
+        font-size: var(--font-size-32);
+    }
+
+    .progress {
+        width: 80px;
+        height: 80px;
+    }
+
+    .progress-bar .dotts {
+        left: -100px;
+    }
+}

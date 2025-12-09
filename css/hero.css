@@ -1,0 +1,170 @@
+.header-hero {
+    width: 100%;
+    background-image: url("../images/Group\ 6962.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.hero .hero-child {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.heading {
+    font-size: var(--font-size-32);
+    font-family: var(--font-family-satoshi);
+    line-height: var(--line-height);
+}
+
+.heading-sumry {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-22);
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+}
+
+.green {
+    color: var(--color-green);
+    font-weight: var(--font-weight-700);
+}
+
+.heading-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-family: var(--font-family);
+}
+
+.heading-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.gadd {
+    width: 104px;
+    height: 50px;
+    opacity: 1;
+
+}
+
+.gadd img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0px;
+    bottom: -35px;
+}
+
+.heading-row img {
+    height: 20px;
+    width: 20px;
+
+}
+
+.hero-img {
+    align-items: end;
+}
+
+.hero-img .hero-logo {
+    width: 137px;
+    height: 102px;
+    opacity: 1;
+    position: relative;
+    top: -45px;
+}
+
+.hero-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero-img .hero-banner {
+    max-width: 296px;
+    height: 170px;
+    opacity: 1;
+    position: relative;
+    bottom: 30px;
+}
+
+.hero-banner img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media screen and (min-width:768px) {
+    .hero{
+        width: 100%;
+        padding-top: 300px;
+    }
+    .hero .hero-child {
+        width: 90%;
+        row-gap: 30px;
+    }
+
+    .hero .hero-img{
+        margin-top: -210px;
+    }
+
+    .hero .hero-text{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .heading {
+        font-size: var(--font-size-52);
+    }
+
+    .heading-sumry {
+        font-size: var(--font-size-30);
+    }
+
+    .heading-info {
+        flex-direction: row;
+        column-gap: 50px;
+    }
+
+    .gadd {
+        width: 83.19999694824219px;
+        height: 40px;
+    }
+
+    .gadd img {
+        position: unset;
+    }
+
+    .hero-img .hero-banner {
+        max-width: 569.0007934570312px;
+        height: 322.5829772949219px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .hero-img .hero-logo {
+        top: 5px;
+        right: 250px;
+    }
+}

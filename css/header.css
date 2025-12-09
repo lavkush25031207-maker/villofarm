@@ -1,0 +1,173 @@
+header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+nav {
+    padding: 50px;
+}
+
+.primary {
+    position: absolute;
+    background: var(--background-hero);
+    top: 0;
+    left: 0;
+    width: 75%;
+    padding: 50px 30px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 20;
+    padding: 50px;
+}
+
+.primary.show {
+    transform: translateX(0%);
+}
+
+.closer {
+    font-size: 32px;
+    color: var(--color);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+nav ul li {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    background-color: rgba(128, 128, 128, 0.158);
+    border-bottom: 3px solid var(--white);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transform: translateX(-40px);
+    animation: slideIn 0.5s forwards ease;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon img,
+.icon-s img {
+    width: 30px;
+}
+
+.icon-s {
+    position: relative;
+}
+
+.icon-s::after {
+    content: "0";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--color-green);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: -6px;
+    font-size: 12px;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+
+    .menu,
+    .closer,
+    .icon {
+        display: none;
+    }
+
+    .primary,
+    .secondary {
+        transform: none;
+        display: block;
+        position: static;
+        height: auto;
+        padding: 0;
+        background: none;
+        width: auto;
+    }
+
+    .primary ul li,
+    .secondary ul li {
+        all: unset;
+    }
+
+    .secondary ul li .icon {
+        display: block;
+    }
+
+    .primary ul,
+    .secondary ul {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        margin-top: 0;
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    .logo img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -40px;
+        width: 70px;
+        height: 70px;
+    }
+}

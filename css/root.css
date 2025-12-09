@@ -1,0 +1,75 @@
+:root {
+    --background-color: rgba(237, 248, 242, 1);
+    --background-grey: linear-gradient(180deg, rgba(116, 133, 158, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
+    --background-hero: rgba(125, 190, 211, 1);
+    --color: rgba(41, 10, 5, 1);
+    --color-green: rgba(7, 151, 71, 1);
+    --color-black: rgba(0, 0, 0, 0.8);
+    --color-black1: rgba(51, 65, 85, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-grey: rgba(116, 133, 158, 1);
+
+    --background: linear-gradient(180deg, rgba(254, 247, 199, 0.3) 0%, rgba(152, 148, 119, 0) 100%);
+    --background-1: rgba(235, 237, 240, 1);
+
+    --vbg: linear-gradient(180deg, rgba(0, 0, 0, 0.64) 18.95%, rgba(0, 0, 0, 0.2) 77.56%);
+
+
+    --box-shadow: 0px 21px 34px 0px rgba(214, 214, 214, 0.7);
+    --font-family: "Poppins", sans-serif;
+    --font-family-satoshi: 'Satoshi', sans-serif;
+
+    --font-weight-900: 900;
+    --font-weight-700: 700;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --font-style: Medium;
+
+    --font-size-40: 40px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+    --font-size-52: 52px;
+    --font-size-30: 30px;
+    --font-size-32: 32px;
+    --font-size-14: 14px;
+    --font-size-20: 20px;
+    --font-size-22: 22px;
+    --font-size-12: 12px;
+    --font-size-24: 24px;
+
+
+    --line-height: 100%;
+    --line-height22: 22px;
+    --line-height24: 24px;
+    --letter-spacing: 0%;
+
+
+    --font-style: Bold;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    font-family: var(--font-family-satoshi);
+    color: var(--color);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+button {
+    all: unset;
+}

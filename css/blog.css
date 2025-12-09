@@ -1,0 +1,141 @@
+.blog {
+    width: 100%;
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.blog-parent {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    column-gap: 20px;
+}
+
+.blog-card{
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+.blog-card .blog-image {
+    width: 100%;
+    min-width: 394px;
+    height: 240px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.blog-data {
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 20px;
+}
+
+.blog-data .date {
+    font-weight: var(--font-weight400);
+    font-style: Italic;
+    font-size: var(--font-size-14);
+    color: var(--color-grey);
+}
+
+.blog-data span {
+    font-weight: var(--font-weight500);
+    font-size: var(--font-size-18);
+    color: var(--color-black1);
+}
+
+.blog-data p {
+    font-weight: var(--font-weight400);
+    font-size: 14px;
+    color: var(--color-grey);
+}
+
+.blog-container button {
+    width: 185.8114013671875px;
+    height: 42px;
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+    text-align: center;
+    border-radius: 54px;
+}
+
+.cumpany {
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cumpany-parent {
+    padding: 30px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background: var(--background-color);
+    border-radius: 10px;
+}
+
+.cumpany-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.cumpany-img {
+    width: 100%;
+    min-width: 295px;
+}
+
+.cumpany-img img{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .blog-container {
+        align-items: center;
+    }
+
+    .cumpany-parent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cumpany-child .heading-s {
+        text-align: start;
+    }
+
+    .cumpany-child {
+        width: 50%;
+    }
+
+    .cumpany-img{
+        text-align: end;
+    }
+    .cumpany-child img {
+        width: 460px;
+        height: 69px;
+    }
+}

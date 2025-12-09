@@ -1,0 +1,120 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-div {
+    width: 100%;
+    height: 40px;
+    background: var(--background-grey);
+}
+
+.footer-logo img {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    row-gap: 20px;
+}
+
+.footer-child {
+    width: 90%;
+}
+
+.footer-child1 {
+    width: 50%;
+    float: left;
+}
+
+.footer-child2 {
+    width: 50%;
+    float: left;
+}
+
+footer p {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height22);
+    color: var(--color-black1);
+}
+
+.footer-child .read-more {
+    color: var(--color-green);
+}
+
+.footer-icon {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.footer-icon i {
+    font-size: 30px;
+    color: var(--color-black1);
+}
+
+footer h4 {
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height24);
+    text-transform: capitalize;
+    color: var(--color-black1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-14);
+    line-height: var(--font-size-30);
+    letter-spacing: 0%;
+    color: var(--color-black1);
+    text-decoration: none;
+}
+
+.footer-child .copy-write {
+    margin-top: 50px;
+}
+
+.footer .footer-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-image img {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    footer {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 130px;
+    }
+
+    .footer-div {
+        height: 80px;
+    }
+
+    .footer .footer-image{
+        height: 400px;
+    }
+
+    .footer-image img{
+        height: 100%;
+    }
+}
