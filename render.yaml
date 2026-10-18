@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: villofarm-api
+    name: villofarm-api-sg
     runtime: docker
     plan: free
+    region: singapore
     branch: main
     dockerfilePath: ./backend/Dockerfile
     dockerContext: .
