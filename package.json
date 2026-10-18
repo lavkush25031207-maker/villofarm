@@ -1,0 +1,12 @@
+{
+  "name": "villofarm-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "mvn -f backend/pom.xml spring-boot:run",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "mvn -f backend/pom.xml clean package -DskipTests"
+  }
+}
