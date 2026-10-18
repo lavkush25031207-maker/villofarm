@@ -1,5 +1,5 @@
 import type { Order, Product, User } from "./types";
-const API = "/api";
+const API = import.meta.env.VITE_API_URL || "/api";
 const request = async <T>(
   path: string,
   options: RequestInit = {},

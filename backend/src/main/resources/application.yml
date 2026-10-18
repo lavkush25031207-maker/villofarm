@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/villofarm}
+    url: "${DB_URL:jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:villofarm}}"
     username: ${DB_USERNAME:postgres}
     password: ${DB_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
@@ -21,6 +21,8 @@ server:
 app:
   jwt-secret: ${JWT_SECRET:replace-with-a-long-development-secret}
   jwt-expiration-ms: 86400000
+  cors:
+    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:5173}
 springdoc:
   swagger-ui:
     path: /swagger-ui.html

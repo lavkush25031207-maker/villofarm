@@ -50,6 +50,15 @@ Store: `http://localhost:5173`
 
 The Vite development server proxies `/api` to Spring Boot. For deployment, serve the frontend and route `/api` to the backend.
 
+## Deploy the backend on Render
+
+The repository includes a Render Blueprint and Dockerfile for the Spring Boot API. In Render, create a new Blueprint from this repository and use the existing `healthy-dishes-db` database when prompted. The Blueprint maps the database's internal host, port, database, user and password into environment variables without committing credentials.
+
+Set `APP_CORS_ALLOWED_ORIGINS` on the Render service to the deployed Vercel URL (comma-separated if local development should also be allowed). After the API is deployed, set `VITE_API_URL` in Vercel to the API URL plus `/api`, then redeploy the frontend.
+
+Health check: `/health`
+API base: `/api`
+
 ## Seed admin
 
 - Email: `admin@villofarm.com`
