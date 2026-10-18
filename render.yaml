@@ -9,10 +9,26 @@ services:
     dockerContext: .
     healthCheckPath: /health
     envVars:
-      - key: DATABASE_URL
+      - key: DB_HOST
         fromDatabase:
           name: healthy-dishes-db
-          property: connectionString
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: healthy-dishes-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: healthy-dishes-db
+          property: database
+      - key: DB_USERNAME
+        fromDatabase:
+          name: healthy-dishes-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: healthy-dishes-db
+          property: password
       - key: JWT_SECRET
         generateValue: true
       - key: APP_CORS_ALLOWED_ORIGINS
